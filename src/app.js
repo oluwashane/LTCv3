@@ -8,7 +8,7 @@ app.use(cors());
 app.use(express.json());
 app.use(endPoints);
 
-const port = 2222;
+const port = process.env.PORT;
 
 app.listen(port, () => {
     console.log(`server running on ${port}`)
